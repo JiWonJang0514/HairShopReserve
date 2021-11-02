@@ -6,6 +6,8 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
+// 깃허브에 업로드 되고 있어요!
+
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
