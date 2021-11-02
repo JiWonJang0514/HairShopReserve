@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="loginPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <children>
+      <AnchorPane layoutX="260.0" layoutY="33.0" prefHeight="434.0" prefWidth="281.0">
+         <children>
+            <TextField fx:id="phone" layoutX="52.0" layoutY="127.0" prefHeight="22.0" prefWidth="178.0" promptText="-없이 입력하세요" />
+            <PasswordField fx:id="pw" layoutX="52.0" layoutY="174.0" prefHeight="22.0" prefWidth="178.0" />
+            <TextField fx:id="name" layoutX="52.0" layoutY="217.0" prefHeight="22.0" prefWidth="178.0" />
+            <Button fx:id="loginBtn" layoutX="52.0" layoutY="324.0" mnemonicParsing="false" onAction="#loginBtnHandler" prefHeight="37.0" prefWidth="178.0" styleClass="btn" text="로그인" />
+            <Button fx:id="joinBtn" layoutX="52.0" layoutY="374.0" mnemonicParsing="false" onAction="#joinBtnHandler" prefHeight="37.0" prefWidth="178.0" styleClass="btn" text="가입하기" />
+            <Label layoutX="51.0" layoutY="160.0" text="비밀번호" />
+            <Label layoutX="52.0" layoutY="112.0" prefHeight="15.0" prefWidth="48.0" text="전화번호" />
+            <Label layoutX="99.0" layoutY="31.0" text="H예약">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="203.0" text="이름" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

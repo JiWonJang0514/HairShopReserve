@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminController">
+   <children>
+      <ListView fx:id="reserveList" layoutX="14.0" layoutY="61.0" prefHeight="424.0" prefWidth="536.0" />
+      <Label fx:id="shopName" layoutX="69.0" layoutY="15.0" text="순수 분당화이트갤러리점">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutBtn" layoutX="460.0" layoutY="18.0" mnemonicParsing="false" onAction="#logoutBtnHandler" prefHeight="15.0" prefWidth="90.0" styleClass="menu-btn" text="로그아웃">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="577.0" layoutY="15.0" text="예약 보기">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="subPane" layoutX="577.0" layoutY="61.0" prefHeight="132.0" prefWidth="200.0">
+         <children>
+            <AnchorPane id="subPane" prefHeight="133.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="designerChoiceBox" layoutX="11.0" layoutY="30.0" prefHeight="23.0" prefWidth="178.0" />
+                  <Label layoutX="11.0" layoutY="14.0" prefHeight="15.0" prefWidth="48.0" text="디자이너" />
+                  <Button fx:id="designerBtn" layoutX="11.0" layoutY="76.0" mnemonicParsing="false" onAction="#designerBtnHandler" prefHeight="37.0" prefWidth="178.0" styleClass="btn" text="디자이너별 예약 보기" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="45.0" fitWidth="48.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="allBtn" layoutX="588.0" layoutY="449.0" mnemonicParsing="false" onAction="#allBtnHandler" prefHeight="37.0" prefWidth="178.0" styleClass="btn" text="전체 예약 보기" />
+   </children>
+</AnchorPane>

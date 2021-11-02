@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPane" prefHeight="500.0" prefWidth="800.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
+   <children>
+      <Button fx:id="mypageBtn" layoutX="588.0" layoutY="448.0" mnemonicParsing="false" onAction="#mypageBtnHandler" prefHeight="37.0" prefWidth="178.0" styleClass="btn" text="내 예약 확인" />
+      <Button fx:id="reserveBtn" layoutX="588.0" layoutY="397.0" mnemonicParsing="false" onAction="#reserveBtnHandler" prefHeight="37.0" prefWidth="178.0" styleClass="btn" text="예약하기" />
+      <AnchorPane id="shopPane" fx:id="shopPane" layoutX="14.0" layoutY="61.0" prefHeight="376.0" prefWidth="538.0">
+         <children>
+            <AnchorPane layoutY="168.0" prefHeight="208.0" prefWidth="538.0" styleClass="infoPane">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" styleClass="whitLabel" text="영업시간">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="91.0" styleClass="whitLabel" text="휴무">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="openingTime" layoutX="15.0" layoutY="47.0" styleClass="whitLabel" text="10:00 - 19:00" />
+                  <Label fx:id="offDay" layoutX="14.0" layoutY="123.0" styleClass="whitLabel" text="매주 월요일" />
+                  <Label layoutX="252.0" layoutY="14.0" styleClass="whitLabel" text="디자이너">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="designer1" layoutX="250.0" layoutY="47.0" styleClass="whitLabel" text="주홍 원장" />
+                  <Label fx:id="designer3" layoutX="250.0" layoutY="96.0" styleClass="whitLabel" text="재희 점장" />
+                  <Label fx:id="designer2" layoutX="250.0" layoutY="71.0" prefHeight="15.0" prefWidth="76.0" styleClass="whitLabel" text="주연 부원장" />
+                  <Label fx:id="designer4" layoutX="250.0" layoutY="123.0" styleClass="whitLabel" text="강우 실장" />
+                  <Label fx:id="designer5" layoutX="250.0" layoutY="148.0" styleClass="whitLabel" text="다인 팀장" />
+                  <Label fx:id="designer6" layoutX="250.0" layoutY="171.0" styleClass="whitLabel" text="채아 디자이너" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="designerChoiceBox" layoutX="588.0" layoutY="95.0" prefHeight="23.0" prefWidth="178.0" />
+      <ChoiceBox fx:id="treatmentChoiceBox" layoutX="588.0" layoutY="145.0" prefHeight="23.0" prefWidth="178.0" />
+      <DatePicker fx:id="reserveDatePicker" layoutX="588.0" layoutY="197.0" prefHeight="23.0" prefWidth="178.0" />
+      <Label layoutX="588.0" layoutY="81.0" text="디자이너" />
+      <Label layoutX="588.0" layoutY="131.0" text="시술종류" />
+      <Label layoutX="588.0" layoutY="183.0" text="날짜" />
+      <Label layoutX="582.0" layoutY="14.0" text="예약">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopNameLabel" layoutX="14.0" layoutY="14.0" text="순수 분당화이트갤러리점">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane id="pagePane" layoutX="14.0" layoutY="450.0" prefHeight="37.0" prefWidth="538.0">
+         <children>
+            <Button fx:id="page3Btn" layoutX="253.0" layoutY="3.0" mnemonicParsing="false" onAction="#page3BtnHandler" prefHeight="32.0" prefWidth="24.0" styleClass="pageBtn" text="3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="page2Btn" layoutX="212.0" layoutY="3.0" mnemonicParsing="false" onAction="#page2BtnHandler" prefHeight="32.0" prefWidth="32.0" styleClass="pageBtn" text="2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="page1Btn" layoutX="176.0" layoutY="3.0" mnemonicParsing="false" onAction="#page1BtnHandler" prefHeight="32.0" prefWidth="24.0" styleClass="pageBtn" text="1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="page4Btn" layoutX="297.0" layoutY="3.0" mnemonicParsing="false" onAction="#page4BtnHandler" prefHeight="32.0" prefWidth="24.0" styleClass="pageBtn" text="4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextBtn" layoutX="337.0" layoutY="3.0" mnemonicParsing="false" onAction="#nextBtnHandler" prefHeight="32.0" prefWidth="32.0" styleClass="pageBtn" text="&gt;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="prevBtn" layoutX="134.0" layoutY="3.0" mnemonicParsing="false" onAction="#prevBtnHandler" prefHeight="32.0" prefWidth="30.0" styleClass="pageBtn" text="&lt;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="logoutBtn" layoutX="462.0" layoutY="17.0" mnemonicParsing="false" onAction="#logoutBtnHandler" prefHeight="15.0" prefWidth="90.0" styleClass="menu-btn" text="로그아웃">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
